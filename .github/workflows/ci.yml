@@ -24,5 +24,5 @@ jobs:
     - name: Verify the built image
       run: docker images 
     - name: Push to Dockerhub
-      run: docker push navdeeptanwar108/cicd-pipeline:latest
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/cicd-pipeline:latest
     
